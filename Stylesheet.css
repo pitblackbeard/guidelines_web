@@ -1,0 +1,457 @@
+/*  ---------------- Reset ---------------- 
+    http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 | License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------------------ END reset --------------------- */
+
+
+
+/* ------- Text styles ------- */
+
+h1 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 600;
+}
+
+
+h2 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+
+}
+
+h6 {   
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    max-width: 44rem;
+}
+
+p {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 400; 
+}
+
+.body-text-1 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+    max-width: 44rem;
+}
+
+.body-text-2 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    max-width: 66rem;
+}
+
+
+.quotes {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+}
+
+a {
+    color: var(--tomato);
+}
+
+/* ------- Space between paragraphs ------- */
+
+h6 + h6 {
+    margin-top: 1.4rem;
+}
+
+h5 + h5 {
+    margin-top: 2rem;
+}
+
+h4 + h4 {
+    margin-top: 2.5rem;
+}
+
+h3 + h3 {
+    margin-top: 3.5rem;
+}
+
+h2 + h2 {
+    margin-top: 4.5rem;
+}
+
+h1 + h1 {
+    margin-top: 6rem;
+}
+
+.body-text-1 + .body-text-1 {
+    margin-top: 1rem;
+}
+
+.body-text-2 + .body-text-2 {
+    margin-top: 2rem;
+}
+
+h6 + .body-text-1 {
+    margin-top: 1.4rem;
+}
+
+h5 + .body-text-2 {
+    margin-top: 2rem;
+}
+
+
+/* ------- Color ------- */
+
+:root {
+    --tomato: #ff6347;
+    --tomato-dark: #e8563c;
+    --tomato-light: #fb8f7c;
+    --beige: #eddfcf;
+    --beige-dark: #dcccb9;
+    --beige-light: #fcf3e7;    
+    --white: #fafafa;
+    --black: #0b0b0b;
+    --black-light: #262626;
+}
+
+/* ------- Grid & Layout ------- */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0px, 1fr));
+    grid-auto-flow: column;
+    /*grid-template-columns: repeat(auto-fit, 1fr);*/
+    /*grid-template-columns: repeat(12, minmax(0, 1fr));*/
+    column-gap: 2rem;
+}
+
+.column-1 {
+    grid-column: 1 / span 4;
+    overflow: hidden;
+}
+
+.column-2 {
+    grid-column: 5 / span 4;
+    overflow: hidden;
+}
+
+.column-3 {
+    grid-column: 9 / span 4;
+    overflow: hidden;
+}
+
+.block-title {
+    grid-column: 1 / span 12;
+    margin-bottom: 2rem;
+}
+
+.page-title {
+    grid-column: 1 / span 12;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+
+section {
+    border-top: solid 4px black;
+    padding: 2rem;
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-beige {
+    background-color: var(--beige);
+}
+
+/* ------- Componentes ------- */
+
+.card-color-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-tile {
+    height: 6.8rem;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.card-color-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card-color-row .color-tile {
+    height: 3.4rem;
+    width: 50%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.color-1 {
+    background-color: var(--tomato);
+    color: var(--white);
+}
+
+.color-1-1 {
+    background-color: var(--tomato-light);
+    color: var(--white);
+}
+
+.color-1-2 {
+    background-color: var(--tomato-dark);
+    color: var(--white);
+}
+
+.color-2 {
+    background-color: var(--beige);
+    color: var(--black);
+}
+
+.color-2-1 {
+    background-color: var(--beige-light);
+    color: var(--black);
+}
+
+.color-2-2 {
+    background-color: var(--beige-dark);
+    color: var(--black);
+}
+
+.color-3 {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.color-3-1 {
+    background-color: var(--black-light);
+    color: var(--white);
+}
+
+.color-3-2 {
+    background-color: var(--white);
+    color: var(--black);
+    border: solid 1px black;
+    border-top: none;
+}
+
+.card-color h4 {
+    justify-content: center;
+    align-items: center;
+}
+
+.tomato {
+    color: var(--tomato);
+}
+
+.white {
+    color: var(--white);
+}
+
+.table-typeface {
+    grid-column: 1 / span 12;
+    border: solid 2px var(--black);
+    padding: 16px;
+}
+
+.card-typeface {
+    display: grid;
+    grid-column: 1 / span 12;
+}
+
+.card-container {
+    grid-column: 1/ span 12;
+    display: grid;
+    grid-template-columns: subgrid;
+    padding: 0;
+    border: solid 2px var(--black);
+    border-bottom: solid 12px var(--black);
+    overflow: hidden;
+}
+
+.card-typeface {
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: subgrid;
+    border: solid 2px var(--black);
+    overflow: hidden;
+}
+
+.card-typeface-L {
+    grid-column: 1 / span 8;
+    padding: 1rem;
+}
+
+.card-typeface-description {
+    grid-column: 9 / span 4;
+    border-left: solid 4px var(--black);
+    padding: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-typeface-specs {
+    grid-column: 9 / span 4;
+    border-left: solid 4px var(--black);
+    padding: 1rem;
+}
+
+.separator {
+    background-color: var(--white);
+}
+
+.label {
+    display: inline-block;
+    width: 7rem;
+    color: var(--black-light);
+}
+
+.card-typeface-R h5 {
+    padding-bottom: 1.4rem;
+}
+
+button {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--tomato);
+    padding: 12px 24px;
+    border-radius: 2rem;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--tomato-dark);
+}
+
+button:active {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.pbb {
+    line-height: 1.7rem;
+    margin-top: 0px;
+}
+
+
+/* ------- particion palabras ------- */
+
+p, h1, h2, h3, h4, h5, h6 {
+    /* ------- Hyphens va guay ------- */
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    /* ------- Fallback para no soportados ------- */
+    word-wrap: break-word;
+    }
+
+
+
+/* ------- Under 960px ------- */
+
+@media only screen and (max-width: 960px) {
+
+.grid-container {
+    display: block;
+}    
+
+.column-2, .column-3 {
+    margin-top: 2rem;
+}
+
+.card-typeface {
+    display: block;
+}
+
+.card-typeface-description {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-typeface-description div {
+    width: 70%;
+    margin-right: 2rem;
+}
+
+.card-typeface-description button {
+    align-self: flex-start;
+
+}
+.card-typeface-description, .card-typeface-specs {
+    border-left: none;
+    border-top: solid 2px var(--black);
+}
