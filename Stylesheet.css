@@ -425,6 +425,15 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 960px) {
 
+.section {
+    border-top: solid 4px black;
+    padding: 0.5rem;
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+    
+
 .grid-container {
     display: block;
 }    
@@ -473,6 +482,26 @@ h2 {
 
 .hide-mobile {
     display: none;
+}
+
+}
+
+/* ------- Under 480px ------- */
+
+@media only screen and (max-width: 480px) {
+
+.card-typeface-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-typeface-description div {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.card-typeface-description button {
+    width: 100%;
 }
 
 }
