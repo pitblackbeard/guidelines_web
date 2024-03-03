@@ -425,14 +425,10 @@ p, h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 960px) {
 
-.section {
-    border-top: solid 4px black;
-    padding: 0.5rem;
-    grid-column: 1 / span 12;
-    display: grid;
-    grid-template-columns: subgrid;
+section {
+    padding: 2rem 0.5rem;
+    display: block;
 }
-    
 
 .grid-container {
     display: block;
