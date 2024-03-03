@@ -455,3 +455,24 @@ p, h1, h2, h3, h4, h5, h6 {
     border-left: none;
     border-top: solid 2px var(--black);
 }
+
+h1 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 600;
+}
+
+
+h2 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+}
