@@ -426,7 +426,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 960px) {
 
 section {
-    padding: 2rem 0.5rem;
+    padding: 2rem 2rem;
     display: block;
 }
 
@@ -486,6 +486,10 @@ h2 {
 
 @media only screen and (max-width: 480px) {
 
+section {
+    padding: 2rem 1rem;
+}
+	
 .card-typeface-description {
     display: flex;
     flex-direction: column;
